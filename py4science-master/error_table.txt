@@ -1,0 +1,64 @@
+p.178 (前頁から続く「リスト5.3」の最終行のコメント)
+誤）# 結果は 3*5*5=45（追加したメソッドの確認）
+正）# 結果は 3*3*5=45（追加したメソッドの確認）
+
+
+※以下の全ての誤記は、第4刷以降修正済み
+
+p. 71
+誤）そして、その実行文の返り値（計算結果）はOut[3]:の後ろに表示されています。
+正）そして、その実行文の返り値（計算結果）はOut[4]:の後ろに表示されています。
+
+p. 195 (上から6行目)
+誤）laodtxtとgenfromtxtを利用...
+正）loadtxtとgenfromtxtを利用...
+
+p. 196
+誤）OOXML形式（Office Open XML、拡張子.xlsx/.xlsm）：openpyxl、xlwings
+正）OOXML形式（Office Open XML、拡張子.xlsx/.xlsm）：xlrd、openpyxl、xlwings
+（注：xlrdのVersion 0.8.0以降では、OOXML形式にも対応しており上記のとおり訂正しますが、
+      まだまだ機能的には発展途上と考えておいた方が良いでしょう。）
+
+p. 222 (IPythonのコード例のうち、In [3]: の行)
+誤）# 16 bit符号なし整数型のndarray
+正）# 64 bitの浮動小数点で構成される複素数
+
+p.294 
+誤---ここから
+In [10]: dat8.index = ['un', 'due', 'trois', 'quatre']
+Out[10]: dat8
+un 1
+due 3
+trois NaN
+quatre 12
+dtype: float64
+誤---ここまで
+正---ここから
+In [10]: dat7.index = ['un', 'due', 'trois', 'quatre']
+Out[10]: dat7
+un         1
+due        3
+trois      6
+quatre    12
+dtype: int64
+正---ここまで
+
+
+※以下の4つの誤記は、第2刷以降修正済み
+
+p. 199とp.200のソースコード中(各ページ１か所)
+誤）# 保存ｌするオブジェクトの準備
+正）# 保存するオブジェクトの準備
+
+p.363
+誤）In [14]: %run numba_jit.py
+正）In [14]: %run spd_numba1.py
+
+p.366
+誤）In [15]: %run numba_classjit.py # @jitclassデコレータが無効な場合
+正）In [15]: %run spd_numba2.py # @jitclassデコレータが無効な場合
+
+p.366
+誤）In [16]: %run numba_classjit.py # @jitclassデコレータが有効な場合
+正）In [16]: %run spd_numba2.py # @jitclassデコレータが有効な場合
+
